@@ -1,0 +1,22 @@
+{
+  "name": "amp-explore",
+  "version": "1.0.0",
+  "description": "Exploring current AMP features",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sanjsanj/amp-explore.git"
+  },
+  "author": "",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sanjsanj/amp-explore/issues"
+  },
+  "homepage": "https://github.com/sanjsanj/amp-explore#readme",
+  "dependencies": {
+    "http-server": "^0.10.0"
+  }
+}
