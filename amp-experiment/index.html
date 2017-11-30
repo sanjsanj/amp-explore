@@ -22,7 +22,7 @@
       color: white;
       cursor: pointer;
     }
-    body[amp-x-button-style-experiment="square"] .button-style-experiment {
+    body[amp-x-button-style-experiment="square"] button {
       height: 40px;
       border-radius: 5px;
     }
@@ -32,10 +32,9 @@
 </head>
 
 <body>
-  <h1 class="default-h1">Round CTA</h1>
-  <h1 class="square-h1">Square CTA</h1>
+  <h1>{shape} CTA test</h1>
   
-  <button on="tap:AMP.navigateTo(url='/')" class="button-style-experiment">Car Insurance</button>
+  <button on="tap:AMP.navigateTo(url='/')">Car Insurance</button>
   
   <amp-experiment>
     <script type="application/json">
@@ -50,11 +49,14 @@
     </script>
   </amp-experiment>
 </body>
-
 <!--
 You can force an experiment to be in a specific variant by adding amp-x-experiment-name to the AMP page URL.
 #amp-x-button-color-experiment=0
 #amp-x-button-color-experiment=1
--->
 
+TODO:
+mustache => different copy
+analytics
+CMS UI for Toni?  How do we build MVT
+-->
 </html>
