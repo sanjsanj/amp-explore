@@ -22,56 +22,22 @@
       color: white;
       cursor: pointer;
     }
-    body[amp-x-button-style-experiment="square"] button {
-      height: 40px;
-      border-radius: 5px;
-    }
-    .hide {
-      display: none;
-    }
   </style>
   
-  <script async custom-element="amp-experiment" src="https://cdn.ampproject.org/v0/amp-experiment-0.1.js"></script>
   <script async custom-element="amp-bind" src="https://cdn.ampproject.org/v0/amp-bind-0.1.js"></script>
 </head>
 
-<body id="body">
+<body>
   <amp-state id="amp-state">
     <script type="application/json">
       {
-        "copy": "DefaultCopy"
+        "copy": "Default copy"
       }
     </script>
   </amp-state>
 
-  <h1>{shape} CTA test</h1>
-  <p [class]="hideclass">ONE</p>
-  <p [text]="copy">TWO</p>
+  <h1 [text]="copy"></h1>
 
-  <!-- <button on="tap:AMP.navigateTo(url='/')">Car Insurance</button> -->
-  <button on="tap:AMP.setState({copy: 'Updated copy', hideclass: 'hide'})">Car Insurance</button>
-
-  <amp-experiment id="amp-experiment-id">
-    <script type="application/json">
-      {
-        "button-style-experiment": {
-          "sticky": false,
-          "variants": {
-            "square": 50
-          }
-        }
-      }
-    </script>
-  </amp-experiment>
+  <button on="tap:AMP.setState({copy: 'Updated copy'})">Car Insurance</button>
 </body>
-<!--
-You can force an experiment to be in a specific variant by adding amp-x-experiment-name to the AMP page URL.
-#amp-x-button-color-experiment=0
-#amp-x-button-color-experiment=1
-
-TODO:
-mustache => different copy
-analytics
-CMS UI for Toni?  How do we build MVT
--->
 </html>
